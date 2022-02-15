@@ -4,28 +4,84 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/new.js"></script>
 	<title>CIS 128</title>
+	<script>
+		$(document).ready(function () {
+				$("#btn").click(function () {
+					var h2 = $("#h2");
+					
+					h2.animate({ fontSize: '5em' }, "fast");
+					h2.animate({ color: "blue" }, "fast");
+				
+				
+				
+				
+
+				});
+				$("#btn").click(function () {
+					var h1 = $("#h1");
+				
+					h1.animate({ fontSize: '5em' }, "fast");
+					h1.animate({color: "blue"}, "fast");
+				
+				
+			   });
+			   $("#btn").click(function () {
+					var R = $("#R");
+				
+					R.animate({ fontSize: '5em' }, "fast");
+					R.animate({ color: "blue" }, "fast");
+
+				$("#h2, #h1, #R").css("color", "red").slideUp(2000).slideDown(2000); 
+				$("#h2, #h1, #R").css("background-color", "yellow");
+				$("#img").css("background-color", "yellow");
+				
+
+				$("#btn").click(function(){
+					var img = $("#img");
+
+					img.animate({ borderRadius: "50%" }, "fast");
+				});
+
+
+	
+
+
+			
+
+				
+
+			   });	
+
+		});
+	
+		
+	</script>
 </head>
 <body>
-	<header><h1>About Myself</h1></header>
+	<h1 id="h1">About Myself</h1>
 		<p class="about">Hi! This is Mohammad Amin Karimi,and I m from Afghanistan. I moved to United States 5 years ago from now.<br> Currently, I m a student at the college of San Mateo. My major is in computer science. I like sports such as,<br> Soccer, Swiming, biking, and hiking.I'm an out going parson. My favorite color is blue, white, and green. 
 		</p>
-		<img src="amin.jpeg" alt="my photo">
+		<img id="img" src="amin.jpeg" alt="my photo">
 		
 	
 		<p class="reason">The Reason Why I am attending this class is that, I want to learn the foundation of web design & web development,<br> plus My major as computer science, It need certain class as requirments included CIS 128.</p>
 
-		<h2>Technologies for this class</h2>
+		<h2 id="h2">Technologies for this class</h2>
 		<ul>
 			<li>HTML</li>
 			<li>CSS</li>
 			<li>JavaScript</li>
 		</ul>
-		<h2>Resources</h2>
+		<h2 id="R">Resources</h2>
 		<ul>
 			<li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> -  This Website provides some learning resources regarding to the front end, and back end</li>
 			<li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> - We can find resources and practices for better understanding of Web Development.</li>
 		</ul>
+
+		<button id="btn" type="Submit">Start animation</button>
 	
 	
 
